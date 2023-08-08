@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 1em;
+            margin-left: 30%;
+        }
+        body{
+            background-color: black;
+        }
+        .label{
+            color: white;
+           font-size: 20px;
+           display: block;
+        }
+        input{
+            margin-top: 5px;
+           padding: 0.6em;
+           width: 50%;
+           font-size: 1rem;
+        }
+        div{
+            width: 80%;
+        }
+        button{
+            font-size: 20px;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 20%;
+        }
+        p{
+            color: white;
+        }
+    </style>
+    
+    <form action="">
+        <div>
+        <label for="textName" class="label">Full Name(in capital letters)</label>
+        <input type="text" id="txtName">
+        </div>
+
+        <div>
+            <label for="textName" class="label">E-mail(in simple lettters)</label>
+            <input type="text" id="txtEmail">
+        </div>
+
+        <div>
+            <button id="submit">SUBMIT</button>
+        </div>
+        
+        <div>
+            <p id="result"></p>
+        </div>
+    </form>
+    <script src="script.js"></script>
+
+</body>
+</html>
